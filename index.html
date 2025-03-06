@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Movie App</h1>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search movies...">
+      <i class="fas fa-search search-icon"></i>
+    </div>
+
+    <!-- Movie List -->
+    <div class="movie-list" id="movie-list">
+      <!-- Movie Cards -->
+      <div class="movie-card" data-id="1">
+        <img src="1.jpg" alt="Movie 1" class="movie-image">
+        <div class="movie-info">
+          <h2 class="movie-title">Inception</h2>
+          <p class="movie-description">An exciting adventure movie.</p>
+        </div>
+      </div>
+      <div class="movie-card" data-id="2">
+        <img src="2.jpg" alt="Movie 2" class="movie-image">
+        <div class="movie-info">
+          <h2 class="movie-title">Interstellar</h2>
+          <p class="movie-description">A thrilling action-packed movie.</p>
+        </div>
+      </div>
+      <div class="movie-card" data-id="3">
+        <img src="3.jpg" alt="Movie 3" class="movie-image">
+        <div class="movie-info">
+          <h2 class="movie-title">The Dark Knight</h2>
+          <p class="movie-description">A heartwarming romantic movie.</p>
+        </div>
+      </div>
+      <div class="movie-card" data-id="4">
+        <img src="4.jpg" alt="Movie 4" class="movie-image">
+        <div class="movie-info">
+          <h2 class="movie-title">Joker</h2>
+          <p class="movie-description">A psychological thriller movie.</p>
+        </div>
+      </div>
+      <div class="movie-card" data-id="5">
+        <img src="5.jpg" alt="Movie 5" class="movie-image">
+        <div class="movie-info">
+          <h2 class="movie-title">Krrish</h2>
+          <p class="movie-description">A Superhero Sci-Fi movie.</p>
+        </div>
+      </div>
+      <div class="movie-card" data-id="6">
+        <img src="6.jpg" alt="Movie 6" class="movie-image">
+        <div class="movie-info">
+          <h2 class="movie-title">Shrek</h2>
+          <p class="movie-description">A hilarious animated adventure movie.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Movie Details -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-btn">&times;</span>
+      <img id="modal-image" src="" alt="Movie Image" class="modal-image">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <p id="modal-details"></p> <!-- Additional details -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
